@@ -43,10 +43,13 @@ class EmployeeController {
         return mapper.entityToDto(service.findById(id));
     }
 
+    /*
     @PutMapping("/employees/{id}")
     EmployeeDto replaceEmployee(@RequestBody EmployeeDto newEmployee, @PathVariable Long id) {
         return mapper.entityToDto(service.replaceEmployee(mapper.dtoToEntity(newEmployee), id));
     }
+
+     */
 
     @DeleteMapping("/employees/{id}")
     void deleteEmployee(@PathVariable Long id) {

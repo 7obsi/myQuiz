@@ -13,8 +13,6 @@ public interface EmployeeService {
 
     public Employee findById(Long id);
 
-    public Employee replaceEmployee(Employee newEmployee, Long id);
-
     public void deleteEmployee(Long id);
 
 }
