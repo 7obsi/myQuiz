@@ -27,7 +27,7 @@ security:
   auth:
     header: Authorization
     prefix: "Bearer "
-    login-uri: /api/v1/authentication
+    login-uri: /api/v1/auth
     white-list:
       - /api/v1/users/register
       # Browser requests
@@ -41,11 +41,3 @@ security:
       - /swagger-ui.html
       # H2
       - /h2-console/**
-  jwt:
-    # Use http://www.allkeysgenerator.com/ to generate secrets
-    secret: ?E(H+MbQeThWmZq4t7w!z%C*F-J@NcRfUjXn2r5u8x/A?D(G+KbPdSgVkYp3s6v9
-    type: JWT
-    issuer: secure-backend
-    audience: secure-app
-    # 12 hours in milliseconds
-    expiration-time: 43200000

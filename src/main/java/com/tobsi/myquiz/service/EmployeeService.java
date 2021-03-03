@@ -7,12 +7,12 @@ import java.util.List;
 
 public interface EmployeeService {
 
-    public List<Employee> findAll();
+    List<Employee> findAll();
 
-    public Employee createEmployee(Employee employee);
+    Employee createEmployee(Employee employee);
 
-    public Employee findById(Long id);
+    Employee findById(Long id);
 
-    public void deleteEmployee(Long id);
+    void deleteEmployee(Long id);
 
 }

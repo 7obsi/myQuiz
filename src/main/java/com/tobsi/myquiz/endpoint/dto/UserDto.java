@@ -1,38 +1,21 @@
-package com.tobsi.myquiz.entity;
+package com.tobsi.myquiz.endpoint.dto;
 
-import com.sun.istack.NotNull;
-
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-public class User {
+public class UserDto {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-
-    @NotNull
-    @Column(nullable = false, length = 20)
     private String username;
-
-    @Column(nullable = false, length = 50)
     private String email;
-
-    @Column(nullable = false)
     private String password;
-
-    @Column(nullable = false, length = 80)
     private String firstName;
-
-    @Column(nullable = false, length = 80)
     private String lastName;
 
-    public User() {
+    public UserDto() {
     }
 
-    public User(String username, String email, String password, String firstName, String lastName) {
+    public UserDto(String username, String email, String password, String firstName, String lastName) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -72,19 +55,19 @@ public class User {
         this.password = password;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 }
