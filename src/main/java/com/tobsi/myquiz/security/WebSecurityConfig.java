@@ -64,6 +64,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/h2-console/**").permitAll()
                 .antMatchers("/h2-console/login.do**").permitAll()
                 .antMatchers("/h2-console/**").permitAll()
+                .antMatchers("/api/quizzes/**").permitAll()
                 .anyRequest().authenticated();
 
         http.headers().frameOptions().sameOrigin();

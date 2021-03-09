@@ -1,222 +1,67 @@
-2021-03-03 11:03:00.260  INFO 4822 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 4822 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:03:00.269  INFO 4822 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:03:01.211  INFO 4822 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:03:01.303  INFO 4822 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
-2021-03-03 11:03:01.676  INFO 4822 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1317b708' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:03:01.680  INFO 4822 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:03:01.984  INFO 4822 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:03:01.997  INFO 4822 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:03:01.997  INFO 4822 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:03:02.093  INFO 4822 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:03:02.093  INFO 4822 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1708 ms
-2021-03-03 11:03:02.141  INFO 4822 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:03:02.367  INFO 4822 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:03:02.376  INFO 4822 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:03:02.731  INFO 4822 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:03:02.802  INFO 4822 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:03:03.000  INFO 4822 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:03:03.179  INFO 4822 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:03:04.373  INFO 4822 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:03:04.384  INFO 4822 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:03:05.517  INFO 4822 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1642968c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c3d4bd7, org.springframework.security.web.header.HeaderWriterFilter@7341baa3, org.springframework.web.filter.CorsFilter@3a7dcfb7, org.springframework.security.web.authentication.logout.LogoutFilter@35840ecc, com.tobsi.myquiz.security.jwt.AuthTokenFilter@6fd97fd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca8c904, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55665086, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50b4e7b2, org.springframework.security.web.session.SessionManagementFilter@7efa366, org.springframework.security.web.access.ExceptionTranslationFilter@aa794a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1764e45e]
-2021-03-03 11:03:05.625  INFO 4822 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:03:06.046  INFO 4822 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:03:06.061  INFO 4822 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 6.491 seconds (JVM running for 8.765)
-2021-03-03 11:03:20.112  INFO 4822 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:03:20.113  INFO 4822 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:03:20.114  INFO 4822 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:03:55.965  INFO 4822 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:03:55.968  INFO 4822 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:03:55.972  INFO 4822 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:03:55.974  INFO 4822 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:04:13.824  INFO 4844 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 4844 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:04:13.828  INFO 4844 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:04:15.032  INFO 4844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:04:15.120  INFO 4844 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
-2021-03-03 11:04:15.420  INFO 4844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@102efc59' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:04:15.424  INFO 4844 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:04:15.678  INFO 4844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:04:15.689  INFO 4844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:04:15.689  INFO 4844 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:04:15.802  INFO 4844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:04:15.803  INFO 4844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
-2021-03-03 11:04:15.842  INFO 4844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:04:16.033  INFO 4844 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:04:16.038  INFO 4844 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:04:16.291  INFO 4844 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:04:16.353  INFO 4844 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:04:16.509  INFO 4844 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:04:16.631  INFO 4844 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:04:17.383  INFO 4844 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:04:17.391  INFO 4844 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:04:18.258  INFO 4844 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49c4118b, org.springframework.security.web.context.SecurityContextPersistenceFilter@8f589d7, org.springframework.security.web.header.HeaderWriterFilter@d70dbeb, org.springframework.web.filter.CorsFilter@7ef7f414, org.springframework.security.web.authentication.logout.LogoutFilter@4bab804f, com.tobsi.myquiz.security.jwt.AuthTokenFilter@5bdb6ea8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a914a00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b0e5d5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@182dcd2b, org.springframework.security.web.session.SessionManagementFilter@4687366b, org.springframework.security.web.access.ExceptionTranslationFilter@578198d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@750c23a3]
-2021-03-03 11:04:18.309  INFO 4844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:04:18.498  INFO 4844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:04:18.507  INFO 4844 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 5.434 seconds (JVM running for 6.301)
-2021-03-03 11:04:28.325  INFO 4844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:04:28.326  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:04:28.328  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:08:22.623  INFO 4844 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:08:22.630  INFO 4844 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:08:22.638  INFO 4844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:08:22.642  INFO 4844 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:08:28.349  INFO 4956 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 4956 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:08:28.353  INFO 4956 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:08:29.260  INFO 4956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:08:29.325  INFO 4956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
-2021-03-03 11:08:29.622  INFO 4956 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@53ed09e8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:08:29.626  INFO 4956 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:08:29.859  INFO 4956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:08:29.871  INFO 4956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:08:29.871  INFO 4956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:08:29.980  INFO 4956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:08:29.982  INFO 4956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1567 ms
-2021-03-03 11:08:30.026  INFO 4956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:08:30.193  INFO 4956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:08:30.198  INFO 4956 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:08:30.444  INFO 4956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:08:30.503  INFO 4956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:08:30.653  INFO 4956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:08:30.744  INFO 4956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:08:31.444  INFO 4956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:08:31.451  INFO 4956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:08:32.199  INFO 4956 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1238a074, org.springframework.security.web.context.SecurityContextPersistenceFilter@3023f157, org.springframework.security.web.header.HeaderWriterFilter@65da1cbe, org.springframework.web.filter.CorsFilter@35b58254, org.springframework.security.web.authentication.logout.LogoutFilter@403cff1c, com.tobsi.myquiz.security.jwt.AuthTokenFilter@5bdb6ea8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5213b887, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cda144a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73baf7f0, org.springframework.security.web.session.SessionManagementFilter@73d7d676, org.springframework.security.web.access.ExceptionTranslationFilter@73b3ce31, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@182dcd2b]
-2021-03-03 11:08:32.242  INFO 4956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:08:32.420  INFO 4956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:08:32.431  INFO 4956 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 4.488 seconds (JVM running for 5.353)
-2021-03-03 11:08:35.781  INFO 4956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:08:35.782  INFO 4956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:08:35.784  INFO 4956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:08:41.533  INFO 4956 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/logincom.tobsi.myquiz.payload.request.LoginRequest@2a7e23e9
-2021-03-03 11:09:19.691  INFO 4956 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:09:19.695  INFO 4956 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:09:19.703  INFO 4956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:09:19.708  INFO 4956 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:09:25.146  INFO 4973 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 4973 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:09:25.148  INFO 4973 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:09:26.078  INFO 4973 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:09:26.145  INFO 4973 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
-2021-03-03 11:09:26.421  INFO 4973 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@8f2098e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:09:26.424  INFO 4973 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:09:26.674  INFO 4973 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:09:26.683  INFO 4973 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:09:26.683  INFO 4973 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:09:26.789  INFO 4973 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:09:26.789  INFO 4973 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1561 ms
-2021-03-03 11:09:26.822  INFO 4973 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:09:26.981  INFO 4973 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:09:26.987  INFO 4973 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:09:27.211  INFO 4973 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:09:27.272  INFO 4973 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:09:27.454  INFO 4973 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:09:27.562  INFO 4973 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:09:28.222  INFO 4973 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:09:28.228  INFO 4973 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:09:28.949  INFO 4973 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@238280df, org.springframework.security.web.context.SecurityContextPersistenceFilter@5213b887, org.springframework.security.web.header.HeaderWriterFilter@1d67348a, org.springframework.web.filter.CorsFilter@182fd26b, org.springframework.security.web.authentication.logout.LogoutFilter@b548f51, com.tobsi.myquiz.security.jwt.AuthTokenFilter@5807ea46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f4029e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5847010, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dc120ab, org.springframework.security.web.session.SessionManagementFilter@3023f157, org.springframework.security.web.access.ExceptionTranslationFilter@3a17acd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bf1b528]
-2021-03-03 11:09:28.992  INFO 4973 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:09:29.173  INFO 4973 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:09:29.183  INFO 4973 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 4.454 seconds (JVM running for 5.184)
-2021-03-03 11:09:40.938  INFO 4973 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:09:40.939  INFO 4973 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:09:40.942  INFO 4973 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-03-03 11:09:41.066  INFO 4973 --- [http-nio-8080-exec-1] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@31783c8
-2021-03-03 11:09:41.374  INFO 4973 --- [http-nio-8080-exec-1] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user1
-2021-03-03 11:14:35.498  INFO 4973 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:14:35.508  INFO 4973 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:14:35.512  INFO 4973 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:14:35.516  INFO 4973 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:14:42.131  INFO 5025 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 5025 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:14:42.134  INFO 5025 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:14:42.907  INFO 5025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:14:42.992  INFO 5025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
-2021-03-03 11:14:43.308  INFO 5025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2b8bd798' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:14:43.313  INFO 5025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:14:43.572  INFO 5025 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:14:43.598  INFO 5025 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:14:43.599  INFO 5025 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:14:43.694  INFO 5025 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:14:43.694  INFO 5025 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
-2021-03-03 11:14:43.736  INFO 5025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:14:43.908  INFO 5025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:14:43.914  INFO 5025 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:14:44.140  INFO 5025 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:14:44.199  INFO 5025 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:14:44.346  INFO 5025 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:14:44.474  INFO 5025 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:14:45.240  INFO 5025 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:14:45.250  INFO 5025 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:14:46.087  INFO 5025 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c1a95a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@571c2ed8, org.springframework.security.web.header.HeaderWriterFilter@7a522157, org.springframework.web.filter.CorsFilter@1adf387e, org.springframework.security.web.authentication.logout.LogoutFilter@2ae4c424, com.tobsi.myquiz.security.jwt.AuthTokenFilter@102ecb61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4eacb6d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e63374b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72b53f27, org.springframework.security.web.session.SessionManagementFilter@476a2819, org.springframework.security.web.access.ExceptionTranslationFilter@cbdc0f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b6683c4]
-2021-03-03 11:14:46.135  INFO 5025 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:14:46.356  INFO 5025 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:14:46.366  INFO 5025 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 4.995 seconds (JVM running for 6.28)
-2021-03-03 11:15:00.124  INFO 5025 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:15:00.124  INFO 5025 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:15:00.125  INFO 5025 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:28:28.380  INFO 5025 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:28:28.389  INFO 5025 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:28:28.395  INFO 5025 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:28:28.401  INFO 5025 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:32:34.523  INFO 5267 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 5267 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:32:34.527  INFO 5267 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:32:35.361  INFO 5267 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:32:35.436  INFO 5267 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
-2021-03-03 11:32:35.758  INFO 5267 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b8280e6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:32:35.764  INFO 5267 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:32:36.021  INFO 5267 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:32:36.046  INFO 5267 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:32:36.046  INFO 5267 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:32:36.130  INFO 5267 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:32:36.131  INFO 5267 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1526 ms
-2021-03-03 11:32:36.171  INFO 5267 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:32:36.334  INFO 5267 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:32:36.340  INFO 5267 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:32:36.555  INFO 5267 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:32:36.608  INFO 5267 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:32:36.753  INFO 5267 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:32:36.869  INFO 5267 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:32:37.573  INFO 5267 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:32:37.582  INFO 5267 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:32:38.369  INFO 5267 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8e8ceb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@43fbc2bf, org.springframework.security.web.header.HeaderWriterFilter@de63949, org.springframework.web.filter.CorsFilter@2699b656, org.springframework.security.web.authentication.logout.LogoutFilter@27bbe773, com.tobsi.myquiz.security.jwt.AuthTokenFilter@61be6051, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e2718b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c225adb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d67b2b3, org.springframework.security.web.session.SessionManagementFilter@13cc31df, org.springframework.security.web.access.ExceptionTranslationFilter@361b3ca6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@301770d9]
-2021-03-03 11:32:38.428  INFO 5267 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:32:38.634  INFO 5267 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:32:38.643  INFO 5267 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 4.828 seconds (JVM running for 6.237)
-2021-03-03 11:33:13.370  INFO 5267 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:33:13.370  INFO 5267 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:33:13.372  INFO 5267 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:33:13.781  INFO 5267 --- [http-nio-8080-exec-1] c.t.m.s.implementation.UserServiceImpl   : User successfully created: user6
-2021-03-03 11:33:26.682  INFO 5267 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@4397f92a
-2021-03-03 11:33:26.954  INFO 5267 --- [http-nio-8080-exec-2] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user6
-2021-03-03 11:33:49.239  INFO 5267 --- [http-nio-8080-exec-4] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@54bfd243
-2021-03-03 11:33:49.337  INFO 5267 --- [http-nio-8080-exec-4] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user6
-2021-03-03 11:34:45.064  INFO 5267 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:34:45.070  INFO 5267 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:34:45.074  INFO 5267 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-03-03 11:34:45.077  INFO 5267 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-03-03 11:34:51.683  INFO 5313 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 5313 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
-2021-03-03 11:34:51.686  INFO 5313 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
-2021-03-03 11:34:52.529  INFO 5313 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-03-03 11:34:52.602  INFO 5313 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
-2021-03-03 11:34:52.919  INFO 5313 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4c18621b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:34:52.924  INFO 5313 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-03 11:34:53.193  INFO 5313 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-03-03 11:34:53.203  INFO 5313 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-03 11:34:53.204  INFO 5313 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-03 11:34:53.291  INFO 5313 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-03 11:34:53.291  INFO 5313 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1442 ms
-2021-03-03 11:34:53.330  INFO 5313 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-03-03 11:34:53.491  INFO 5313 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-03-03 11:34:53.497  INFO 5313 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
-2021-03-03 11:34:53.723  INFO 5313 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-03-03 11:34:53.788  INFO 5313 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
-2021-03-03 11:34:53.954  INFO 5313 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-03-03 11:34:54.060  INFO 5313 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-03-03 11:34:54.701  INFO 5313 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-03-03 11:34:54.710  INFO 5313 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-03-03 11:34:55.496  INFO 5313 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d67b2b3, org.springframework.security.web.context.SecurityContextPersistenceFilter@716e6fa5, org.springframework.security.web.header.HeaderWriterFilter@6ed7b9c5, org.springframework.web.filter.CorsFilter@49bc71b4, org.springframework.security.web.authentication.logout.LogoutFilter@4713b631, com.tobsi.myquiz.security.jwt.AuthTokenFilter@3f3a6091, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1885dc2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76d0a290, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7efa366, org.springframework.security.web.session.SessionManagementFilter@3494a35e, org.springframework.security.web.access.ExceptionTranslationFilter@2cd52eda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fec9d33]
-2021-03-03 11:34:55.544  INFO 5313 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-03 11:34:55.738  INFO 5313 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-03-03 11:34:55.747  INFO 5313 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 4.618 seconds (JVM running for 5.707)
-2021-03-03 11:34:59.491  INFO 5313 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-03 11:34:59.492  INFO 5313 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-03 11:34:59.493  INFO 5313 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-03 11:34:59.811  INFO 5313 --- [http-nio-8080-exec-1] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:09:04.772  INFO 1766 --- [main] com.tobsi.myquiz.MyApplication           : Starting MyApplication using Java 15 on MacBook-Pro.local with PID 1766 (/Users/7obsi/Documents/intellij-workspace/myquiz/target/classes started by 7obsi in /Users/7obsi/Documents/intellij-workspace/myquiz)
+2021-03-08 12:09:04.799  INFO 1766 --- [main] com.tobsi.myquiz.MyApplication           : No active profile set, falling back to default profiles: default
+2021-03-08 12:09:06.990  INFO 1766 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-08 12:09:07.157  INFO 1766 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 7 JPA repository interfaces.
+2021-03-08 12:09:07.663  INFO 1766 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@27df0f3d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-08 12:09:07.668  INFO 1766 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-08 12:09:08.073  INFO 1766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-08 12:09:08.108  INFO 1766 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-08 12:09:08.109  INFO 1766 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-08 12:09:08.234  INFO 1766 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-08 12:09:08.235  INFO 1766 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3272 ms
+2021-03-08 12:09:08.287  INFO 1766 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-08 12:09:08.549  INFO 1766 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-08 12:09:08.558  INFO 1766 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database/db'
+2021-03-08 12:09:09.009  INFO 1766 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-08 12:09:09.073  INFO 1766 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-08 12:09:09.324  INFO 1766 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-08 12:09:09.520  INFO 1766 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-08 12:09:10.812  INFO 1766 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-08 12:09:10.825  INFO 1766 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-08 12:09:12.054  INFO 1766 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29d563bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f02b2d4, org.springframework.security.web.header.HeaderWriterFilter@66048c9e, org.springframework.web.filter.CorsFilter@73fe7483, org.springframework.security.web.authentication.logout.LogoutFilter@5df54296, com.tobsi.myquiz.security.jwt.AuthTokenFilter@7582a16b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31859960, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47374fa5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11577ab8, org.springframework.security.web.session.SessionManagementFilter@35cf91df, org.springframework.security.web.access.ExceptionTranslationFilter@7aca299e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f55a864]
+2021-03-08 12:09:12.163  INFO 1766 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-08 12:09:12.647  INFO 1766 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-08 12:09:12.670  INFO 1766 --- [main] com.tobsi.myquiz.MyApplication           : Started MyApplication in 8.772 seconds (JVM running for 11.979)
+2021-03-08 12:09:40.124  INFO 1766 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-08 12:09:40.124  INFO 1766 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-08 12:09:40.125  INFO 1766 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-08 12:09:40.201 ERROR 1766 --- [http-nio-8080-exec-2] com.tobsi.myquiz.security.jwt.JwtUtils   : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-03-08 12:09:40.226  INFO 1766 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:09:50.171  INFO 1766 --- [http-nio-8080-exec-4] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@2d31f32
+2021-03-08 12:09:50.485  INFO 1766 --- [http-nio-8080-exec-4] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user1
+2021-03-08 12:09:50.538  INFO 1766 --- [http-nio-8080-exec-5] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:12:05.853  INFO 1766 --- [http-nio-8080-exec-7] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:12:26.999  INFO 1766 --- [http-nio-8080-exec-8] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:13:59.007  INFO 1766 --- [http-nio-8080-exec-1] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:14:03.876  INFO 1766 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:14:11.652  INFO 1766 --- [http-nio-8080-exec-3] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@1efde6b8
+2021-03-08 12:14:27.186  INFO 1766 --- [http-nio-8080-exec-5] c.t.m.s.implementation.UserServiceImpl   : User successfully created: user7
+2021-03-08 12:14:27.208 ERROR 1766 --- [http-nio-8080-exec-6] com.tobsi.myquiz.security.jwt.JwtUtils   : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+2021-03-08 12:14:27.209  INFO 1766 --- [http-nio-8080-exec-6] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:14:36.037  INFO 1766 --- [http-nio-8080-exec-7] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@443bc1b
+2021-03-08 12:14:36.123  INFO 1766 --- [http-nio-8080-exec-7] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user7
+2021-03-08 12:14:36.137  INFO 1766 --- [http-nio-8080-exec-8] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:14:37.543  INFO 1766 --- [http-nio-8080-exec-9] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:14:54.647  INFO 1766 --- [http-nio-8080-exec-10] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:15:02.831  INFO 1766 --- [http-nio-8080-exec-1] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:15:40.344  INFO 1766 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:15:45.000  INFO 1766 --- [http-nio-8080-exec-3] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:15:48.866  INFO 1766 --- [http-nio-8080-exec-4] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:16:15.603  INFO 1766 --- [http-nio-8080-exec-5] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:16:39.655  INFO 1766 --- [http-nio-8080-exec-8] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:16:42.267  INFO 1766 --- [http-nio-8080-exec-10] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:16:43.275  INFO 1766 --- [http-nio-8080-exec-1] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:19:00.325  INFO 1766 --- [http-nio-8080-exec-4] c.tobsi.myquiz.endpoint.AuthController   : /api/auth/login com.tobsi.myquiz.payload.request.LoginRequest@19019c45
+2021-03-08 12:19:00.427  INFO 1766 --- [http-nio-8080-exec-4] c.t.m.s.implementation.UserServiceImpl   : User Authentificated: user1
+2021-03-08 12:19:00.451  INFO 1766 --- [http-nio-8080-exec-5] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:20:29.860  INFO 1766 --- [http-nio-8080-exec-7] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:20:30.514  INFO 1766 --- [http-nio-8080-exec-8] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:20:31.376  INFO 1766 --- [http-nio-8080-exec-9] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:20:33.664  INFO 1766 --- [http-nio-8080-exec-10] c.tobsi.myquiz.endpoint.UserController   : /api/users
+2021-03-08 12:36:09.437  INFO 1766 --- [http-nio-8080-exec-2] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:45:55.035  INFO 1766 --- [http-nio-8080-exec-8] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 12:56:08.239  INFO 1766 --- [http-nio-8080-exec-9] c.tobsi.myquiz.endpoint.QuizController   : /api/quizzes
+2021-03-08 13:03:17.341  INFO 1766 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-08 13:03:17.348  INFO 1766 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-08 13:03:17.358  INFO 1766 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-08 13:03:17.363  INFO 1766 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
